@@ -7,9 +7,9 @@
     <title>Film Club - Join</title>
   </head>
   <body>
-    <div id="nav_container">
+    <div class="nav_container">
       <img src="../images/filmclub.png" alt="Film Club logo">
-      <nav>
+      <nav id="nav">
         <a class="top" href="./index.html">Home</a>
         <a class="middle" href="./calendar/index.html">Calendar</a>
         <a class="last" href="./join/index.html">Join</a>
@@ -18,70 +18,76 @@
     <div id="main">
       <div id="first_bucket">
         <h1>Join Film Club</h1>
-        <div id="pic_box">
-          <label for="profile_pic">profile picture</label>
-          <br>
-          <input type="file" id="profile_pic">
-        </div>
-        <div id="grey_space">
-          <img id="uploaded_pic" src="../images/profile-placeholder.png" alt="Your profile picture">
-        </div>
-        <div id="contact_info">
-          <label for="name">name</label>
-          <input type="text" id="name">
-          <label for="email">email address</label>
-          <input type="email" id="email">
-          <label for="password">password</label>
-          <input type="password" id="password">
-          <label for="confirm">confirm password</label>
-          <input type="password" id="confirm">
+        <div id="tab_contact_box">
+          <div id="pic">
+            <div id="pic_box">
+              <label for="profile_pic">profile picture</label>
+              <br>
+              <input type="file" id="profile_pic">
+            </div>
+            <div id="grey_space">
+              <img id="uploaded_pic" src="../images/profile-placeholder.png" alt="Your profile picture">
+            </div>
+          </div>
+          <div id="contact_info">
+            <label for="name">name</label>
+            <input type="text" id="name">
+            <label for="email">email address</label>
+            <input type="email" id="email">
+            <label id="pass" for="password">password</label>
+            <input type="password" id="password">
+            <label for="confirm">confirm password</label>
+            <input type="password" id="confirm">
+          </div>
         </div>
         <div id="genres">
           <p>Which genres are you interested in?</p>
-          <label>
-            <input type="checkbox" value="action">
-            action
-          </label>
-          <label>
-            <input type="checkbox" value="adventure">
-            adventure
-          </label>
-          <label>
-            <input type="checkbox" value="comedy">
-            comedy
-          </label>
-          <label>
-            <input type="checkbox" value="drama">
-            drama
-          </label>
-          <label>
-            <input type="checkbox" value="fantasy">
-            fantasy
-          </label>
-          <label>
-            <input type="checkbox" value="historical">
-            historical
-          </label>
-          <label>
-            <input type="checkbox" value="horror">
-            horror
-          </label>
-          <label>
-            <input type="checkbox" value="mystery">
-            mystery
-          </label>
-          <label>
-            <input type="checkbox" value="romance">
-            romance
-          </label>
-          <label>
-            <input type="checkbox" value="sci_fi">
-            science fiction
-          </label>
-          <label>
-            <input type="checkbox" value="western">
-            western
-          </label>
+          <div id="interested">
+            <label class="label">
+              <input type="checkbox" value="action">
+              action
+            </label>
+            <label class="label">
+              <input type="checkbox" value="adventure">
+              adventure
+            </label>
+            <label class="label">
+              <input type="checkbox" value="comedy">
+              comedy
+            </label>
+            <label class="label">
+              <input type="checkbox" value="drama">
+              drama
+            </label>
+            <label class="label">
+              <input type="checkbox" value="fantasy">
+              fantasy
+            </label>
+            <label class="label">
+              <input type="checkbox" value="historical">
+              historical
+            </label>
+            <label class="label">
+              <input type="checkbox" value="horror">
+              horror
+            </label>
+            <label class="label">
+              <input type="checkbox" value="mystery">
+              mystery
+            </label>
+            <label class="label">
+              <input type="checkbox" value="romance">
+              romance
+            </label>
+            <label class="label">
+              <input type="checkbox" value="sci_fi">
+              science fiction
+            </label>
+            <label class="label">
+              <input id="western" type="checkbox" value="western">
+              western
+            </label>
+          </div>
         </div>
         <div id="input">
           <label for="add">Additional input</label>
@@ -92,7 +98,7 @@
       </div>
     </div>
     <footer>
-      <nav>
+      <nav id="base">
         <a class="top" href="./index.html">Home</a>
         <a class="middle" href="./calendar/index.html">Calendar</a>
         <a class="last" href="./join/index.html">Join</a>
